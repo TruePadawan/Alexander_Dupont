@@ -1,12 +1,92 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=JetBrains+Mono:wght@100..800&family=Poppins:wght@300;400;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=menu"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0&icon_names=photo_camera"/>
+    <link href="/src/style.css" rel="stylesheet">
+    <title>Alexander Dupont | Photographer</title>
+</head>
+<body>
+<div class="wrapper h-screen">
+    <main class="relative h-screen flex flex-col">
+        <header class="flex justify-between items-center border-b-3 border-(--border-color) p-3 sm:px-6 sm:py-4 xl:px-12 xl:py-6">
+            <a href="/">
+                <img class="logo" src="./src/images/logo.png" alt=""/>
+                <!--                <span class="logo text-4xl text-(&#45;&#45;orange-color) font-[Fascinate]">ADP</span>-->
+            </a>
+            <nav class="hidden sm:flex items-center justify-between gap-6 font-secondary font-bold">
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#contact-us">Contact us</a>
+            </nav>
+            <button class="sm:hidden w-10 flex flex-col gap-2 items-end justify-around border-none outline-none bg-transparent text-(--primary-color) sm:text-4xl max-h-10"
+                    type="button">
+                <span class="w-[40%] bg-white h-1"></span>
+                <span class="w-[100%] bg-white h-1"></span>
+                <span class="w-[70%] bg-white h-1"></span>
+            </button>
+            <div class="hidden sm:flex gap-2 items-center" id="lang-switcher">
+                <button class="border-none outline-none font-bold text-orange-400 cursor-pointer">ENG</button>
+                <span class="bg-orange-400 w-3 h-1"></span>
+                <button class="border-none outline-none font-bold cursor-pointer">FR</button>
+            </div>
+        </header>
+        <section class="hero grow flex overflow-hidden">
+            <div class="pb-5 h-full w-full flex flex-col justify-between sm:justify-normal sm:gap-12">
+                <p class="p-3 xl:p-5 text-center text-lg sm:text-3xl xl:border-b-3 border-(--border-color)">Let us
+                    capture moments of your life</p>
+                <div class="px-4 flex flex-col gap-4 sm:gap-6 xl:px-12 xl:py-6">
+                    <div class="border-l-3 border-(--primary-color) py-5 px-6 flex flex-col gap-6">
+                        <h2 class="text-5xl font-light sm:text-7xl">Alexander</h2>
+                        <h2 class="font-medium text-5xl sm:text-7xl">Dupont</h2>
+                        <h2 class="text-5xl font-light sm:text-7xl">P<span
+                                class="text-3xl sm:text-5xl">hotography</span></h2>
+                    </div>
+                    <a class="relative sm:self-start sm:w-[350px] mb-4" href="#">
+                        <p class="block block_1 bg-[#333332] rounded-4xl px-4 py-2">Schedule a shoot</p>
+                        <span class="material-symbols-rounded rounded-full p-4 absolute right-4 top-[-15%] bg-(--orange-color)">photo_camera</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden border-l-2 border-(--border-color) px-2 py-6 xl:flex flex-col max-w-sm gap-8 overflow-hidden">
+                <img class="bg-cover bg-center opacity-40 hover:opacity-100 active:opacity-100 border-2"
+                     src="src/images/women/1.jpg"
+                     alt="a woman posing"/>
+                <img class="bg-cover bg-center opacity-40 hover:opacity-100 active:opacity-100 border-2"
+                     src="src/images/women/2.jpg"
+                     alt="a woman posing"/>
+                <img class="bg-cover bg-center opacity-40 hover:opacity-100 active:opacity-100 border-2"
+                     src="src/images/women/3.jpg"
+                     alt="a woman posing"/>
+            </div>
+        </section>
+    </main>
+</div>
+<div class="lg:hidden p-6 bg-[#212121] border-t-2">
+    <ul class="gap-4 grid grid-cols-1 md:grid-cols-2">
+        <li>
+            <img class="bg-cover bg-center opacity-40 hover:opacity-100 active:opacity-100 border-2"
+                 src="src/images/women/1.jpg"
+                 alt="a woman posing"/>
+        </li>
+        <li>
+            <img class="bg-cover bg-center opacity-40 hover:opacity-100 active:opacity-100 border-2"
+                 src="src/images/women/3.jpg"
+                 alt="a woman posing"/>
+        </li>
+    </ul>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
 </html>

@@ -1,12 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+    --primary-color: #FCFBFA;
+    --orange-color: #D76700;
+    --border-color: #CCCBCA;
+    --font-primary: "JetBrains Mono", monospace;
+    --font-secondary: "Poppins", sans-serif;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    font-family: "JetBrains Mono", monospace;
+    line-height: 1.5;
 
-  background-color: #242424;
+    font-weight: 400;
+    background-color: #242424;
+    color: var(--primary-color);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.block {
+    font-family: "Poppins", sans-serif;
+}
+
+.block_1 {
+    font-size: 1.375rem;
+}
+
+.block_2 {
+    font-size: 1.125rem;
+}
+
+.block_3 {
+    font-size: 0.875rem;
+}
+
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/camera.jpg");
+    filter: blur(3px);
+    background-size: cover;
+    background-position: center;
+}
+
+.material-symbols-rounded {
+    font-size: 2rem;
+}
+
+.material-symbols-outlined {
+    font-size: 2.5rem;
+}
+
+.logo {
+    width: 60px;
 }

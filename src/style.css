@@ -104,3 +104,49 @@ h1, h2, h3, h4 {
         background-position: left top -180px;
     }
 }
+
+.category {
+    cursor: pointer;
+    padding: 10px 0;
+
+    img {
+        max-width: 200px
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        column-gap: 0;
+        transition: column-gap 0.5s ease;
+    }
+
+    .category-img-container {
+        height: auto;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+        overflow: hidden;
+    }
+
+    span {
+        background-color: white;
+        display: inline-block;
+        transition: width 0.25s;
+        width: 0;
+        height: 2px;
+    }
+
+    &:hover, &:focus {
+        p {
+            column-gap: 10px;
+        }
+
+        span {
+            width: 15px;
+            height: 2px;
+        }
+
+        .category-img-container {
+            max-height: 150px;
+        }
+    }
+}

@@ -18,6 +18,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0&icon_names=photo_camera"/>
     <link href="/src/style.css" rel="stylesheet">
+    <link rel="icon" href="src/images/logo.png"/>
     <title>Alexander Dupont | Photographer</title>
 </head>
 <body>
@@ -26,7 +27,6 @@
         <header class="flex justify-between items-center border-b-3 border-(--border-color) p-3 sm:px-6 sm:py-4 xl:px-12 xl:py-6">
             <a href="/">
                 <img class="logo" src="./src/images/logo.png" alt=""/>
-                <!--                <span class="logo text-4xl text-(&#45;&#45;orange-color) font-[Fascinate]">ADP</span>-->
             </a>
             <nav class="hidden sm:flex items-center justify-between gap-6 font-secondary font-bold">
                 <a href="#about">About</a>
@@ -92,8 +92,8 @@
     </ul>
 </div>
 <section aria-labelledby="about">
-    <div class="flex justify-center border-b-2 md:justify-end">
-        <h2 id="about" class="pb-4 pt-8 px-6 text-3xl md:text-4xl md:py-6">About</h2>
+    <div class="flex justify-center border-y-2 md:justify-end">
+        <h2 id="about" class="font-medium pb-4 pt-8 px-6 text-3xl md:text-4xl md:py-6 xl:pe-20">About</h2>
     </div>
     <div class="xl:flex xl:min-h-screen">
         <div id="about-core" class="xl:grow p-4 md:p-8 relative xl:flex xl:flex-col xl:justify-between">
@@ -115,7 +115,7 @@
                     <p class="font-secondary text-sm">Relaunched photos</p>
                 </li>
             </ul>
-            <p class="font-secondary mt-16 whitespace-pre-line md:max-w-sm md:mt-[200px] md:py-6 xl:max-w-lg xl:text-lg">
+            <p class="font-secondary mt-16 whitespace-pre-line md:max-w-sm md:mt-[200px] md:py-6 xl:max-w-lg xl:text-lg xl:px-6">
                 Hi, I'm Alexander.
 
                 I'm a photographer from Lille, France.
@@ -135,7 +135,7 @@
         <aside aria-labelledby="people-say"
                class="p-4 flex flex-col gap-6 border-t-2 md:p-10 xl:max-w-sm xl:justify-between xl:text-sm xl:border-l-2 xl:border-t-0">
             <div class="flex md:justify-between items-center xl:justify-center  ">
-                <h3 id="people-say" class="text-3xl">/ People say</h3>
+                <h3 id="people-say" class="text-2xl md:text-3xl">/ People say</h3>
                 <button class="hidden md:block xl:hidden w-3xs bg-(--orange-color) p-4 font-secondary cursor-pointer hover:bg-(--orange-color)/80 active:bg-(--orange-color)/80">
                     Hire us
                 </button>
@@ -156,6 +156,62 @@
                 Hire us
             </button>
         </aside>
+    </div>
+</section>
+<section aria-labelledby="portfolio">
+    <div class="flex justify-center border-y-2 md:justify-start">
+        <h2 id="portfolio" class="font-medium pb-4 pt-8 px-6 text-3xl md:text-4xl md:py-6 xl:ps-14">Portfolio</h2>
+    </div>
+    <div class="xl:flex xl:min-h-screen">
+        <aside aria-labelledby="portfolio-categories"
+               class="p-4 flex flex-col gap-6 md:p-10 xl:max-w-sm xl:p-14 border-r-2">
+            <h3 id="portfolio-categories" class="text-2xl md:text-3xl">/ Categories</h3>
+            <ul class="font-secondary flex flex-col gap-4 text-xl">
+                <li class="category">
+                    <p><span></span>Individual</p>
+                    <div class="category-img-container">
+                        <img src="src/images/portfolio/greyscale-woman.jpg"
+                             alt="black thin woman"/>
+                    </div>
+                </li>
+                <li class="category">
+                    <p><span></span>Family</p>
+                    <div class="category-img-container">
+                        <img src="src/images/portfolio/greyscale-family.jpg"
+                             alt="greyscale family"/>
+                    </div>
+                </li>
+                <li class="category">
+                    <p><span></span>Business</p>
+                    <div class="category-img-container">
+                        <img src="src/images/portfolio/greyscale-business.jpg"
+                             alt="greyscale skyscraper"/>
+                    </div>
+                </li>
+                <li class="category">
+                    <p><span></span>Love Story</p>
+                    <div class="category-img-container">
+                        <img src="src/images/portfolio/greyscale-love.jpg"
+                             alt="greyscale man and woman lying down"/>
+                    </div>
+                </li>
+                <li class="category">
+                    <p><span></span>Wedding</p>
+                    <div class="category-img-container">
+                        <img src="src/images/portfolio/greyscale-wedding.jpg"
+                             alt="greyscale man and woman holding hands"/>
+                    </div>
+                </li>
+                <li class="category">
+                    <p><span></span>Other</p>
+                    <div class="category-img-container">
+                        <img src="src/images/portfolio/greyscale-other.jpg"
+                             alt="greyscale woman smiling"/>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+        <div class="xl:grow p-4 md:p-8 relative xl:flex xl:flex-col xl:justify-between"></div>
     </div>
 </section>
 <script type="module" src="/src/main.js"></script>

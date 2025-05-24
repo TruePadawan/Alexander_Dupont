@@ -162,10 +162,10 @@
     <div class="flex justify-center border-y-2 md:justify-start">
         <h2 id="portfolio" class="font-medium pb-4 pt-8 px-6 text-3xl md:text-4xl md:py-6 xl:ps-14">Portfolio</h2>
     </div>
-    <div class="xl:flex xl:min-h-screen">
+    <div class="md:flex xl:min-h-screen">
         <aside aria-labelledby="portfolio-categories"
-               class="p-4 flex flex-col gap-6 md:p-10 xl:max-w-sm xl:p-14 border-r-2">
-            <h3 id="portfolio-categories" class="text-2xl md:text-3xl">/ Categories</h3>
+               class="p-4 flex flex-col gap-6 md:p-8 xl:max-w-sm xl:p-14 border-b-2 md:border-b-0 md:border-r-2">
+            <h3 id="portfolio-categories" class="text-2xl md:text-3xl whitespace-nowrap">/ Categories</h3>
             <ul class="font-secondary flex flex-col gap-4 text-xl">
                 <li class="category">
                     <p><span></span>Individual</p>
@@ -211,7 +211,106 @@
                 </li>
             </ul>
         </aside>
-        <div class="xl:grow p-4 md:p-8 relative xl:flex xl:flex-col xl:justify-between"></div>
+        <div class="pt-4 pb-4 ps-4 md:pt-8 md:ps-8 md:pb-8 xl:pt-14 xl:ps-14 xl:grow flex flex-col gap-2">
+            <div class="grid grid-cols-[1fr_2fr] gap-4 pe-4">
+                <img src="src/images/portfolio/p-1.jpg" alt="female model"/>
+                <img src="src/images/portfolio/p-5.jpg" alt="female model"/>
+            </div>
+            <div class="grid grid-cols-[2fr_1fr_0.5fr] gap-4 overflow-hidden">
+                <img class="self-end" src="src/images/portfolio/p-4.jpg" alt="female model"/>
+                <img src="src/images/portfolio/p-2.jpg" alt="female model"/>
+                <img src="src/images/portfolio/p-6.jpg" alt="female model"/>
+            </div>
+            <div class="mt-2 md:mt-4">
+                <p class="font-secondary text-xs">Shooting in abandoned factory 09.02.23</p>
+                <p class="text-2xl mt-2 md:text-3xl">/ Model: Esther Novotna</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="flex justify-center border-y-2">
+        <h2 id="services" class="font-medium pb-4 pt-8 px-6 text-3xl md:text-4xl md:py-6 xl:ps-14">Services</h2>
+    </div>
+    <div class="flex flex-col md:flex-row md:py-0">
+        <div class="p-4 grow xl:p-6">
+            <div class="p-4 flex flex-col items-center gap-6 bg-[#333332] xl:p-10 xl:py-16">
+                <span class="text-3xl">Lite</span>
+                <ul class="font-secondary text-center">
+                    <li>Consultation</li>
+                    <li>1-hour shooting</li>
+                    <li>50 retouched photos</li>
+                    <li>Delivery in 2 weeks</li>
+                </ul>
+                <span class="text-3xl">$59</span>
+                <button class="bg-(--orange-color) self-stretch p-3 font-secondary xl:block xl:mx-6 cursor-pointer hover:bg-(--orange-color)/80 active:bg-(--orange-color)/80">
+                    I want this package
+                </button>
+            </div>
+        </div>
+        <div class="px-4 grow md:border-x-2 md:p-4 xl:p-6">
+            <div class="p-4 flex flex-col items-center gap-6 bg-[#4D4C4C] xl:p-10 xl:py-16">
+                <span class="text-3xl">Standard</span>
+                <ul class="font-secondary text-center">
+                    <li>Consultation</li>
+                    <li>2-hour shooting</li>
+                    <li>100 retouched photos</li>
+                    <li>Delivery in 1 week</li>
+                </ul>
+                <span class="text-3xl">$89</span>
+                <button class="bg-(--orange-color) self-stretch p-3 font-secondary xl:block xl:mx-6 cursor-pointer hover:bg-(--orange-color)/80 active:bg-(--orange-color)/80">
+                    I want this package
+                </button>
+            </div>
+        </div>
+        <div class="p-4 grow xl:p-6">
+            <div class="p-4 flex flex-col items-center gap-6 bg-[#333332] xl:p-10 xl:py-16">
+                <span class="text-3xl">Premium</span>
+                <ul class="font-secondary text-center">
+                    <li>Consultation</li>
+                    <li>3-hour shooting</li>
+                    <li>150` retouched photos</li>
+                    <li>Delivery in 2 weeks</li>
+                </ul>
+                <span class="text-3xl">$149</span>
+                <button class="bg-(--orange-color) self-stretch p-3 font-secondary xl:block xl:mx-6 cursor-pointer hover:bg-(--orange-color)/80 active:bg-(--orange-color)/80">
+                    I want this package
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="p-4 flex flex-col gap-8 border-t-2 md:p-8 md:gap-12 xl:p-16">
+        <h3 id="process" class="mt-2 font-light text-3xl md:text-4xl whitespace-nowrap">/ Process</h3>
+        <ul class="flex flex-col gap-8 xl:gap-10">
+            <li class="flex gap-4">
+                <span class="whitespace-nowrap text-3xl md:text-5xl font-thin">01 /</span>
+                <div class="flex flex-col gap-2 font-secondary">
+                    <p class="text-(--orange-color)">Acquaintance</p>
+                    <p>Thorough call or meeting, to know each other better, aiming a productive collaboration.</p>
+                </div>
+            </li>
+            <li class="flex gap-4">
+                <span class="whitespace-nowrap text-3xl md:text-5xl font-thin">02 /</span>
+                <div class="flex flex-col gap-2 font-secondary">
+                    <p class="text-(--orange-color)">Briefing</p>
+                    <p>Discussion of sheet details, time & date, places and decorations, payment steps, etc...</p>
+                </div>
+            </li>
+            <li class="flex gap-4">
+                <span class="whitespace-nowrap text-3xl md:text-5xl font-thin">03 /</span>
+                <div class="flex flex-col gap-2 font-secondary">
+                    <p class="text-(--orange-color)">Shooting</p>
+                    <p>We make photos as per selected package, you choose the ones that will be retouched.</p>
+                </div>
+            </li>
+            <li class="flex gap-4">
+                <span class="whitespace-nowrap text-3xl md:text-5xl font-thin">04 /</span>
+                <div class="flex flex-col gap-2 font-secondary">
+                    <p class="text-(--orange-color)">Delivery</p>
+                    <p>As soon as the photos are ready, you get the download link.</p>
+                </div>
+            </li>
+        </ul>
     </div>
 </section>
 <script type="module" src="/src/main.js"></script>

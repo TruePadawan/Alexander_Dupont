@@ -25,6 +25,34 @@
 </head>
 <body>
 <div class="wrapper h-screen">
+    <div id="mobile-menu" class="z-10 fixed h-screen w-screen hidden bg-[#333333]/80 px-3 pt-7">
+        <div class="flex flex-col gap-4">
+            <div class="self-end">
+                <button id="close-menu-btn"
+                        class="w-10 flex flex-col gap-2 items-end justify-around border-none outline-none bg-transparent text-(--primary-color) sm:text-4xl max-h-10"
+                        type="button">
+                    <span class="w-[40%] bg-white h-1"></span>
+                    <span class="w-[90%] bg-white h-1"></span>
+                    <span class="w-[70%] bg-white h-1"></span>
+                </button>
+            </div>
+            <div class="flex flex-col items-center">
+                <nav class="flex flex-col items-center justify-between gap-6 font-secondary font-bold">
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact us</a>
+                </nav>
+                <hr class="w-full my-4">
+                <div class="flex gap-2 items-center lang-switcher">
+                    <button class="border-none outline-none font-bold text-orange-400 cursor-pointer">ENG</button>
+                    <span class="bg-orange-400 w-3 h-1"></span>
+                    <button class="border-none outline-none font-bold cursor-pointer">FR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main class="relative h-screen flex flex-col">
         <header class="flex justify-between items-center border-b-3 border-(--border-color) p-3 sm:px-6 sm:py-4 xl:px-12 xl:py-6">
             <a href="/">
@@ -36,13 +64,14 @@
                 <a href="#services">Services</a>
                 <a href="#contact">Contact us</a>
             </nav>
-            <button class="sm:hidden w-10 flex flex-col gap-2 items-end justify-around border-none outline-none bg-transparent text-(--primary-color) sm:text-4xl max-h-10"
+            <button id="hamburger-menu-btn"
+                    class="sm:hidden w-10 flex flex-col gap-2 items-end justify-around border-none outline-none bg-transparent text-(--primary-color) sm:text-4xl max-h-10"
                     type="button">
-                <span class="w-[40%] bg-white h-1"></span>
-                <span class="w-[100%] bg-white h-1"></span>
-                <span class="w-[70%] bg-white h-1"></span>
+                <span class="w-full bg-white h-1"></span>
+                <span class="w-full bg-white h-1"></span>
+                <span class="w-full bg-white h-1"></span>
             </button>
-            <div class="hidden sm:flex gap-2 items-center" id="lang-switcher">
+            <div class="hidden sm:flex gap-2 items-center lang-switcher">
                 <button class="border-none outline-none font-bold text-orange-400 cursor-pointer">ENG</button>
                 <span class="bg-orange-400 w-3 h-1"></span>
                 <button class="border-none outline-none font-bold cursor-pointer">FR</button>
@@ -125,7 +154,8 @@
                 8 years ago I started with a freelance shooting and now proudly represent my own photo studio called
                 "Alexander Dupont Photography".
 
-                At ADP we love our job and try to be creative every time, so our customers can get some really unique
+                At ADP we love our job and try to be creative every time, so our customers can get some really
+                unique
                 content.
 
                 Yours faithfully,
@@ -144,7 +174,8 @@
             </div>
             <div class="flex flex-col md:flex-row gap-2 md:gap-8 xl:flex-col xl:px-6">
                 <div class="flex flex-col">
-                    <p class="font-secondary whitespace-pre-line">You can really feel comfortable with these guys; they
+                    <p class="font-secondary whitespace-pre-line">You can really feel comfortable with these guys;
+                        they
                         know what they do, completely enjoyed the
                         process...
 
@@ -318,7 +349,8 @@
 <section id="contact" aria-labelledby="get-in-touch"
          class="p-3 flex flex-col justify-between font-secondary md:p-8 xl:px-20 xl:pt-20">
     <form class="mt-4 p-4 h-max bg-white/15 flex flex-col items-center gap-4 md:p-10 md:mx-8 md:gap-8 self-center">
-        <h3 id="get-in-touch" class="text-2xl sm:text-3xl font-primary md:text-4xl lg:text-5xl">Get in touch with us</h3>
+        <h3 id="get-in-touch" class="text-2xl sm:text-3xl font-primary md:text-4xl lg:text-5xl">Get in touch with
+            us</h3>
         <p class="md:text-xl">Let us brighten up your gray mood</p>
         <ul class="flex flex-col items-stretch gap-4 self-stretch md:w-lg md:self-center">
             <li>

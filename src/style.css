@@ -49,6 +49,25 @@ h1, h2, h3, h4 {
     font-size: 0.875rem;
 }
 
+#hamburger-menu-btn {
+    span {
+        transition: width 0.1s ease-in;
+    }
+
+    &.menu-open {
+        span:nth-child(1) {
+            width: 40%;
+        }
+
+        span:nth-child(2) {
+            width: 90%;
+        }
+
+        span:nth-child(3) {
+            width: 70%;
+        }
+    }
+}
 
 .wrapper {
     position: relative;
@@ -76,7 +95,6 @@ h1, h2, h3, h4 {
     'wght' 400,
     'GRAD' 0,
     'opsz' 20;
-    /*font-size: 2.5rem;*/
 }
 
 .logo {
@@ -202,7 +220,6 @@ form {
     input[type=checkbox] {
         width: 18px;
         height: 18px;
-        /*background-color: var(--orange-color);*/
     }
 }
 

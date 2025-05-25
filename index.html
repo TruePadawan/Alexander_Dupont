@@ -17,6 +17,8 @@
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=menu"/>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0&icon_names=photo_camera"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call,location_on"/>
     <link href="/src/style.css" rel="stylesheet">
     <link rel="icon" href="src/images/logo.png"/>
     <title>Alexander Dupont | Photographer</title>
@@ -32,7 +34,7 @@
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#services">Services</a>
-                <a href="#contact-us">Contact us</a>
+                <a href="#contact">Contact us</a>
             </nav>
             <button class="sm:hidden w-10 flex flex-col gap-2 items-end justify-around border-none outline-none bg-transparent text-(--primary-color) sm:text-4xl max-h-10"
                     type="button">
@@ -312,6 +314,61 @@
             </li>
         </ul>
     </div>
+</section>
+<section id="contact" aria-labelledby="get-in-touch"
+         class="p-3 flex flex-col justify-between font-secondary md:p-8 xl:px-20 xl:pt-20">
+    <form class="mt-4 p-4 h-max bg-white/15 flex flex-col items-center gap-4 md:p-10 md:mx-8 md:gap-8 self-center">
+        <h3 id="get-in-touch" class="text-3xl font-primary md:text-4xl lg:text-5xl">Get in touch with us</h3>
+        <p class="md:text-xl">Let us brighten up your gray mood</p>
+        <ul class="flex flex-col items-stretch gap-4 self-stretch md:w-lg md:self-center">
+            <li>
+                <label for="fullname" class="sr-only">Full Name</label>
+                <input id="fullname" placeholder="Full Name" required>
+            </li>
+            <li>
+                <label for="email" class="sr-only">Email Address</label>
+                <input id="email" type="email" placeholder="Email" required>
+            </li>
+            <li>
+                <label for="telephone" class="sr-only">Telephone</label>
+                <input id="telephone" type="tel" placeholder="+33">
+            </li>
+            <li>
+                <label for="comments" class="sr-only">Comments</label>
+                <textarea id="comments" placeholder="Comments" rows="6" required></textarea>
+            </li>
+            <li class="flex items-center gap-2">
+                <input type="checkbox" id="terms" required>
+                <label class="whitespace-nowrap" for="terms">I agree to processing of personal data</label>
+            </li>
+        </ul>
+        <button class="bg-(--orange-color) self-stretch p-3 xl:block xl:mx-6 cursor-pointer hover:bg-(--orange-color)/80 active:bg-(--orange-color)/80">
+            Submit message
+        </button>
+    </form>
+    <footer class="grid grid-cols-1 md:grid-cols-[100px_minmax(0,_1fr)] md:mt-16 xl:grid-cols-3 xl:flex xl:justify-between xl:gap-20">
+        <ul class="py-10 flex flex-col gap-8 md:flex-row md:justify-self-end xl:order-last">
+            <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined footer-icon">call</span>
+                <span>+33(3)00000000</span>
+            </li>
+            <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined footer-icon">location_on</span>
+                <span class="whitespace-nowrap">Rue de Gant 17, Lille, France</span>
+            </li>
+        </ul>
+        <div class="flex items-center gap-4 md:col-span-2 xl:col-span-1 xl:grow xl:justify-center">
+            <span class="grow h-0.5 bg-white xl:max-w-20"></span>
+            <div class="flex gap-6">
+                <img class="cursor-pointer" src="src/icons/instagram.svg" alt="instagram"/>
+                <img class="cursor-pointer" src="src/icons/pinterest.svg" alt="pinterest"/>
+                <img class="cursor-pointer" src="src/icons/behance.svg" alt="behance"/>
+            </div>
+            <span class="grow h-0.5 bg-white xl:max-w-20"></span>
+        </div>
+        <img class="justify-self-center w-[100px] md:order-first md:justify-self-start" src="./src/images/logo.png"
+             alt=""/>
+    </footer>
 </section>
 <script type="module" src="/src/main.js"></script>
 </body>

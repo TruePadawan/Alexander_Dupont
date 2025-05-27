@@ -79,9 +79,9 @@
     </div>
 
     <main class="relative h-screen flex flex-col">
-        <header class="flex justify-between items-center border-b-3 border-(--border-color) p-3 sm:px-6 sm:py-4 xl:px-12 xl:py-6">
+        <header class="flex justify-between items-center border-b-3 border-(--border-color) p-4 sm:px-6 sm:py-4 xl:px-12 xl:py-10">
             <a href="/">
-                <img class="logo" src="./src/images/logo.png" alt=""/>
+                <img class="h-10 w-20" src="./src/images/logo.png" alt=""/>
             </a>
             <nav class="hidden sm:flex items-center justify-between gap-6 font-secondary font-bold">
                 <a href="#about">About</a>
@@ -372,8 +372,8 @@
     </div>
 </section>
 <section id="contact" aria-labelledby="get-in-touch"
-         class="p-3 flex flex-col justify-between font-secondary md:p-8 xl:px-20 xl:pt-20">
-    <form class="mt-4 p-4 h-max bg-white/15 flex flex-col items-center gap-4 md:p-10 md:mx-8 md:gap-8 self-center">
+         class="p-3 flex flex-col gap-8 justify-between font-secondary md:p-8 xl:px-20 xl:pt-20">
+    <form class="mt-4 p-4 h-max bg-white/15 w-full flex flex-col items-center gap-4 md:w-auto md:p-10 md:mx-8 md:gap-8 self-center">
         <h3 id="get-in-touch" class="text-2xl sm:text-3xl font-primary md:text-4xl lg:text-5xl">Get in touch with
             us</h3>
         <p class="md:text-xl">Let us brighten up your gray mood</p>
@@ -403,8 +403,8 @@
             Submit message
         </button>
     </form>
-    <footer class="grid grid-cols-1 md:grid-cols-[100px_minmax(0,_1fr)] md:mt-16 xl:grid-cols-3 xl:flex xl:justify-between xl:gap-20">
-        <ul class="py-10 flex flex-col gap-8 md:flex-row md:justify-self-end xl:order-last">
+    <footer class="grid grid-cols-1 gap-4 md:grid-cols-[100px_minmax(0,_1fr)] md:mt-16 xl:grid-cols-3 xl:flex xl:justify-between xl:gap-20">
+        <ul class="flex flex-col gap-8 md:flex-row md:justify-self-end xl:order-last">
             <li class="flex items-center gap-2">
                 <span class="material-symbols-outlined footer-icon">call</span>
                 <span>+33(3)00000000</span>
@@ -423,7 +423,7 @@
             </div>
             <span class="grow h-0.5 bg-white xl:max-w-20"></span>
         </div>
-        <img class="justify-self-center w-[100px] md:order-first md:justify-self-start" src="./src/images/logo.png"
+        <img class="justify-self-center w-20 h-10 md:order-first md:justify-self-start" src="./src/images/logo.png"
              alt=""/>
     </footer>
 </section>

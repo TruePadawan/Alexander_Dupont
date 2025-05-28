@@ -1,18 +1,25 @@
 const openMenuButton = document.getElementById("hamburger-menu-btn");
 const closeMenuButton = document.getElementById("close-menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
+const mobileNavEls = mobileMenu.querySelectorAll("nav a");
 
-openMenuButton.onclick = (ev) => {
-    // Trigger the button animation
+function closeMobileMenu() {
+    const menuIsClosed = openMenuButton.classList.toggle("menu-open") === false;
+    if (menuIsClosed) {
+        mobileMenu.classList.add("hidden")
+    }
+}
+
+function openMobileMenu() {
     const menuIsOpen = openMenuButton.classList.toggle("menu-open");
     if (menuIsOpen) {
         mobileMenu.classList.remove("hidden")
     }
 }
 
-closeMenuButton.onclick = (ev) => {
-    const menuIsClosed = openMenuButton.classList.toggle("menu-open") === false;
-    if (menuIsClosed) {
-        mobileMenu.classList.add("hidden")
-    }
-}
+openMenuButton.onclick = openMobileMenu
+closeMenuButton.onclick = closeMobileMenu
+
+mobileNavEls.forEach(anchorEl => {
+    anchorEl.addEventListener("click", closeMobileMenu)
+})

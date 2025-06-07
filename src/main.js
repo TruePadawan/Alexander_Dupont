@@ -37,7 +37,8 @@ mobileNavEls.forEach(anchorEl => {
 
 engSwitch.forEach(el => {
     el.addEventListener("click", switchLanguage);
-})
+});
+
 frSwitch.forEach(el => {
     el.addEventListener("click", switchLanguage);
-})
+});
